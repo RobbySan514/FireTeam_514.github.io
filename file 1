@@ -3,33 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fireteam_514 | Elite Tech Sprints</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fireteam_514 | Mission Start</title>
+    <script src="https://tailwindcss.com"></script>
     <style>
-        body { background-color: #0f172a; color: #f8fafc; }
-        .hero-gradient { background: radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(15,23,42,1) 70%); }
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; color: #fff; }
+        
+        /* The Realistic Burn Background */
+        .hero-bg {
+            background: url('https://githubusercontent.com') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: heat-shimmer 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes heat-shimmer {
+            0% { filter: brightness(0.9) contrast(1.1); transform: scale(1); }
+            100% { filter: brightness(1.1) contrast(1.2); transform: scale(1.01); }
+        }
+
+        .deploy-btn {
+            margin-top: 350px; /* Positions it below the burning 514 */
+            background: rgba(249, 115, 22, 0.1);
+            border: 1px solid rgba(249, 115, 22, 0.5);
+            padding: 15px 40px;
+            color: #f97316;
+            font-family: monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .deploy-btn:hover {
+            background: #f97316;
+            color: #000;
+            box-shadow: 0 0 30px #f97316;
+            transform: scale(1.1);
+        }
     </style>
 </head>
-<body class="hero-gradient min-h-screen flex flex-col items-center justify-center p-6 text-center">
-    
-    <!-- Hero Section -->
-    <header class="max-w-2xl">
-        <h1 class="text-5xl font-extrabold tracking-tighter text-orange-500 mb-2">FIRETEAM_514</h1>
-        <p class="text-xl text-slate-400 font-mono mb-8 uppercase tracking-widest">Mission Start</p>
-        
-        <div class="bg-slate-800/50 border border-slate-700 p-6 rounded-xl backdrop-blur-sm shadow-2xl">
-            <p class="text-lg leading-relaxed mb-6">
-                Elite tech sprints. We deploy rapid solutions: full-stack builds, automation & critical fixes. Fast turnarounds, zero fluff.
-            </p>
-            <a href="YOUR_CONTRA_URL_HERE" class="inline-block bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg uppercase tracking-wider">
-                Deploy My Project
-            </a>
-        </div>
-    </header>
+<body>
 
-    <footer class="mt-12 text-slate-500 text-sm font-mono">
-        &copy; 2024 FIRETEAM_514 // SECURE TERMINAL
-    </footer>
+    <div class="hero-bg">
+        <a href="https://contra.com" class="deploy-btn">
+            Deploy Mission
+        </a>
+    </div>
 
 </body>
 </html>
