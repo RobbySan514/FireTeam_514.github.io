@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireteam_514 | Elite Tech Sprints</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .hero-gradient { background: radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(15,23,42,1) 70%); }
+    </style>
+</head>
+<body class="hero-gradient min-h-screen flex flex-col items-center justify-center p-6 text-center">
+    
+    <!-- Hero Section -->
+    <header class="max-w-2xl">
+        <h1 class="text-5xl font-extrabold tracking-tighter text-orange-500 mb-2">FIRETEAM_514</h1>
+        <p class="text-xl text-slate-400 font-mono mb-8 uppercase tracking-widest">Mission Start</p>
+        
+        <div class="bg-slate-800/50 border border-slate-700 p-6 rounded-xl backdrop-blur-sm shadow-2xl">
+            <p class="text-lg leading-relaxed mb-6">
+                Elite tech sprints. We deploy rapid solutions: full-stack builds, automation & critical fixes. Fast turnarounds, zero fluff.
+            </p>
+            <a href="YOUR_CONTRA_URL_HERE" class="inline-block bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg uppercase tracking-wider">
+                Deploy My Project
+            </a>
+        </div>
+    </header>
+
+    <footer class="mt-12 text-slate-500 text-sm font-mono">
+        &copy; 2024 FIRETEAM_514 // SECURE TERMINAL
+    </footer>
+
+</body>
+</html>
